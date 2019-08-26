@@ -12,6 +12,10 @@
 		A56CBBB823146DF8001F4AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56CBBB723146DF8001F4AD9 /* Assets.xcassets */; };
 		A56CBBBB23146DF8001F4AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56CBBB923146DF8001F4AD9 /* LaunchScreen.storyboard */; };
 		A56CBBC523146E06001F4AD9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CBBC423146E06001F4AD9 /* CloudKit.framework */; };
+		A56CBBCB23146F00001F4AD9 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56CBBCA23146F00001F4AD9 /* Entry.swift */; };
+		A56CBBCD23147474001F4AD9 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56CBBCC23147474001F4AD9 /* EntryController.swift */; };
+		A56CBBCF23147A88001F4AD9 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56CBBCE23147A88001F4AD9 /* EntryListTableViewController.swift */; };
+		A56CBBD123147FBD001F4AD9 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56CBBD023147FBD001F4AD9 /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		A56CBBBC23146DF8001F4AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A56CBBC223146E04001F4AD9 /* Journal - CK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Journal - CK.entitlements"; sourceTree = "<group>"; };
 		A56CBBC423146E06001F4AD9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A56CBBCA23146F00001F4AD9 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		A56CBBCC23147474001F4AD9 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		A56CBBCE23147A88001F4AD9 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		A56CBBD023147FBD001F4AD9 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 		A56CBBC723146E30001F4AD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A56CBBCA23146F00001F4AD9 /* Entry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 		A56CBBC823146E37001F4AD9 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A56CBBCC23147474001F4AD9 /* EntryController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -103,6 +113,8 @@
 		A56CBBC923146E3E001F4AD9 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A56CBBCE23147A88001F4AD9 /* EntryListTableViewController.swift */,
+				A56CBBD023147FBD001F4AD9 /* EntryDetailViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -186,6 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56CBBCD23147474001F4AD9 /* EntryController.swift in Sources */,
+				A56CBBCB23146F00001F4AD9 /* Entry.swift in Sources */,
+				A56CBBCF23147A88001F4AD9 /* EntryListTableViewController.swift in Sources */,
+				A56CBBD123147FBD001F4AD9 /* EntryDetailViewController.swift in Sources */,
 				A56CBBB123146DF7001F4AD9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +351,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Journal - CK/Journal - CK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = "Journal - CK/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Journal - CK/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +370,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Journal - CK/Journal - CK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = "Journal - CK/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Journal - CK/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
